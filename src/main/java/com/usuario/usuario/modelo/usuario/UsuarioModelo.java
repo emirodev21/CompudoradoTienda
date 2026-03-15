@@ -6,6 +6,8 @@ import org.springframework.data.annotation.CreatedDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -49,5 +51,9 @@ public class UsuarioModelo {
     @CreatedDate
     @Column(name = "fecha_creacion", updatable = false)
     private LocalDateTime fecha_creacion;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "rol", nullable = false)
+    private ROL rol;
 
 }

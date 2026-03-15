@@ -1,5 +1,7 @@
 package com.usuario.usuario.servicio.usuario;
 
-public interface UsuarioImplementacion {
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+public interface UsuarioImplementacion extends UserDetailsService {
 
 }
