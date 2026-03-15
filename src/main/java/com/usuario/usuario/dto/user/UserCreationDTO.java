@@ -9,25 +9,25 @@ import lombok.Setter;
 @Setter
 public class UserCreationDTO {
 
-    @NotBlank(message = "El nombre no puede estar vacío")
-    private String nombre;
+    @NotBlank(message = "The name is required. It cannot be empty.")
+    private String name;
 
-    @NotBlank(message = "El apellido no puede estar vacío")
-    private String primer_apellido;
+    @NotBlank(message = "The first_surname is required. It cannot be empty.")
+    private String first_surname;
 
     //este dato es opcional, puede que el usuario solo tenga un apellido
-    private String segundo_apellido;
+    private String second_surname;
 
-    @NotBlank(message = "El email no puede estar vacío")
+    @NotBlank(message = "The email is required. It cannot be empty.")
     private String email;
 
-    @NotNull(message = "La cedula es obligatoria")
-    private Long cedula;
+    @NotNull(message = "The identification_number is required. It cannot be empty.")
+    private Long identification_number;
 
-    @NotBlank(message = "La direccion no puede estar vacía")
-    private String direccion;
+    @NotBlank(message = "The address is required. It cannot be empty.")
+    private String address;
 
-    @NotBlank(message = "El password no puede estar vacío")
+    @NotBlank(message = "The password is required. It cannot be empty.")
     private String password;
 
 }

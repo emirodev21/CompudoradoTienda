@@ -7,11 +7,11 @@ import lombok.Setter;
 @Setter
 public class UserAdministratorDTO {
 
-    private String nombre;
-    private String primerApellido;
-    private String segundoApellido;
+    private String name;
+    private String first_surname;
+    private String second_surname;
     private String email;
-    private String cedula;
-    private String direccion;
+    private String identification_number;
+    private String address;
 
 }
