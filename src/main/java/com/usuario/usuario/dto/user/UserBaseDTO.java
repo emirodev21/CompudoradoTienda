@@ -1,17 +1,13 @@
-package com.usuario.usuario.dto.usuario;
-
-import java.time.LocalDateTime;
-
-import com.usuario.usuario.modelo.usuario.ROL;
+package com.usuario.usuario.dto.user;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class UsuarioGerenteDTO {
+public class UserBaseDTO {
 
-    private Integer id;
+    
     private String nombre;
     private String primerApellido;
     private String segundoApellido;
@@ -19,6 +15,5 @@ public class UsuarioGerenteDTO {
     private String cedula;
     private String direccion;
     private String password;
-    private LocalDateTime fechaCreacion;
-    private ROL rol;
+    
 }

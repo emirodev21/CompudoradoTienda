@@ -1,11 +1,11 @@
-package com.usuario.usuario.dto.usuario;
+package com.usuario.usuario.dto.user;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class UsuarioAdminDTO {
+public class UserAdministratorDTO {
 
     private String nombre;
     private String primerApellido;

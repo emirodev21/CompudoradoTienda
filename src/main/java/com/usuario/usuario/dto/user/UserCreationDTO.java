@@ -1,4 +1,4 @@
-package com.usuario.usuario.dto.usuario;
+package com.usuario.usuario.dto.user;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CrearUsuarioDTO {
+public class UserCreationDTO {
 
     @NotBlank(message = "El nombre no puede estar vacío")
     private String nombre;

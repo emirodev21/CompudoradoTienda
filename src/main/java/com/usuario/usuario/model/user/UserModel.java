@@ -1,4 +1,4 @@
-package com.usuario.usuario.modelo.usuario;
+package com.usuario.usuario.model.user;
 
 import java.time.LocalDateTime;
 
@@ -21,39 +21,39 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UsuarioModelo {
+public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "nombre", nullable = false)
-    private String nombre;
+    @Column(name = "name", nullable = false)
+    private String name;
 
     @Column(name = "primer_apellido", nullable = false)
-    private String primer_apellido;
+    private String first_surname;
 
-    @Column(name = "segundo_apellido", nullable = true)
-    private String segundo_apellido;
+    @Column(name = "second_surname", nullable = true)
+    private String second_surname;
 
     @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @Column(name = "cedula", unique = true, nullable = false)
-    private Long cedula;
+    @Column(name = "identification_number", unique = true, nullable = false)
+    private Long identification_number;
 
-    @Column(name = "direccion", nullable = false)
-    private String direccion;
+    @Column(name = "address", nullable = false)
+    private String address;
 
     @Column(name = "password", nullable = false)
     private String password;
 
     @CreatedDate
-    @Column(name = "fecha_creacion", updatable = false)
-    private LocalDateTime fecha_creacion;
+    @Column(name = "creation_date", updatable = false)
+    private LocalDateTime creation_date;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "rol", nullable = false)
-    private ROL rol;
+    @Column(name = "role", nullable = false)
+    private ROLE role;
 
 }
